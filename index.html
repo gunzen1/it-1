@@ -14,12 +14,17 @@
       <ul class="nav">
         <li class="nav__item">
           <a class="nav__link">
-            Обо мне
+            Старт
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#technologies">
-            Технологии
+          <a class="nav__link" href="#vacation-type">
+            Горы
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#vacation-type">
+            
           </a>
         </li>
         <li class="nav__item">
@@ -33,20 +38,103 @@
   <main class="main">
     <div class="main__start">
       <div class="start__info">
-        <img class="start__pic" src="./colorful-stain-paint.png" alt="colorful image">
-        <h1 class="start__text">Всем привет! Я Баир, будущий инженер по качеству</h1>
+        <div class="carousel js-carousel">
+          <div class="carousel__radio js-carousel__radio">
+            <label class="carousel__element">
+              <input class="carousel__radio-real js-carousel__radio-real" type="radio" checked="checked" name="vacation" value="picture_1">
+              <span class="carousel__radio-fake"></span>
+            </label>
+            <label class="carousel__element">
+              <input class="carousel__radio-real js-carousel__radio-real" type="radio" name="vacation" value="picture_2">
+              <span class="carousel__radio-fake"></span>
+            </label>
+            <label class="carousel__element">
+              <input class="carousel__radio-real js-carousel__radio-real" type="radio" name="vacation" value="picture_3">
+              <span class="carousel__radio-fake"></span>
+            </label>
+            <label class="carousel__element">
+              <input class="carousel__radio-real js-carousel__radio-real" type="radio" name="vacation" value="picture_4">
+              <span class="carousel__radio-fake"></span>
+            </label>
+          </div>
+          <div class="carousel__pictures js-carousel__pictures" style="left: 0px;">
+            <div class="carousel__pic">
+              <img class="carousel__img" src="./pictures/vacations/forest.jpg" alt="vacation type">
+            </div>
+            <div class="carousel__pic">
+              <img class="carousel__img" src="./pictures/vacations/sightseeing.webp" alt="vacation type">
+            </div>
+            <div class="carousel__pic">
+              <img class="carousel__img" src="./pictures/vacations/snow.jpg" alt="vacation type">
+            </div>
+            <div class="carousel__pic">
+              <img class="carousel__img" src="./pictures/vacations/sunny.jpg" alt="vacation type">
+            </div>
+          </div>
+          <div class="carousel__buttons">
+            <div class="carousel__button carousel__button_prev js-carousel__button_prev"></div>
+            <div class="carousel__button carousel__button_next js-carousel__button_next"></div>
+          </div>
+        </div>
+        <h1 class="start__text">Организация отпуска под ключ</h1>
       </div>
     </div>
-    <article class="main__technologies" id="technologies">
-      <h2 class="main__header">Технологии, которые я изучаю:</h2>
-      <ul class="technologies__list">
-        <li class="technologies__item">JEST</li>
-        <li class="technologies__item">Puppeteer</li>
-        <li class="technologies__item">HTML</li>
-        <li class="technologies__item">CSS</li>
-        <li class="technologies__item">JS</li>
-        <li class="technologies__item">Mocha</li>
+    <article class="main__vacation-type" id="vacation-type">
+      <h2 class="main__header">Что включает пакет</h2>
+      <ul class="vacation-type__list">
+        <li class="vacation-type__item">
+          <img src="./pictures/path.svg" alt="path" class="vacation-type__ico">
+          маршруты
+        </li>
+        <li class="vacation-type__item">
+          <img src="./pictures/hotels.svg" alt="hotels" class="vacation-type__ico">
+          Отели
+        </li>
+        <li class="vacation-type__item">
+          <img src="./pictures/place.svg" alt="places" class="vacation-type__ico">
+          Достопримечательности
+        </li>
+        <li class="vacation-type__item">
+          <img src="./pictures/tickets.svg" alt="tickets" class="vacation-type__ico">
+          Билеты
+        </li>
+        <li class="vacation-type__item">
+          <img src="./pictures/tours.svg" alt="tours" class="vacation-type__ico">
+          Туры
+        </li>
       </ul>
+    </article>
+    <article class="main__top-countries">
+      <h2 class="main__header">Популярные направления</h2>
+      <div class="top-countries__list js-top-countries__list">
+        <div class="top-countries__row js-top-countries__row">
+          <div class="top-countries__item">
+            <img src="./pictures/countries/turkey.jpeg" alt="turkey" class="top-countries__country">
+            <div class="top-countries__name">Турция</div>
+          </div>
+          <div class="top-countries__item">
+            <img src="./pictures/countries/bulgar.jpeg" alt="bulgar" class="top-countries__country">
+            <div class="top-countries__name">Болгария</div>
+          </div>
+          <div class="top-countries__item">
+            <img src="./pictures/countries/egypt.jpeg" alt="egypt" class="top-countries__country">
+            <div class="top-countries__name">Египет</div>
+          </div>
+          <div class="top-countries__item">
+            <img src="./pictures/countries/greece.jpeg" alt="greece" class="top-countries__country">
+            <div class="top-countries__name">Греция</div>
+          </div>
+          <div class="top-countries__item">
+            <img src="./pictures/countries/montenegro.jpeg" alt="montenegro" class="top-countries__country">
+            <div class="top-countries__name">Черногория</div>
+          </div>
+          <div class="top-countries__item">
+            <img src="./pictures/countries/spain.jpg" alt="spain" class="top-countries__country">
+            <div class="top-countries__name">Испания</div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination js-pagination"></div>
     </article>
     <article class="main__contacts" id="contacts">
       <h2 class="main__header">Если у вас есть вопросы</h2>
